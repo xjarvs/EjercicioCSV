@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My First Spring Boot App</title>    
+    <style>
+        html {
+            font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background-color: #00aae4;
+        }
+        body{
+            padding: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio CSV</h1>
+    <p>
+        Tiempo <span th:text="${tstamp}"></span>
+    </p>
+    <h1>Reporte 1</h1>
+	<a href="/export1">Export to CSV</a>
+    <h1>Reporte 2</h1>
+    <a href="/export2">Export to CSV</a>
+</body>
+</html>
+    
